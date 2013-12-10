@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @reseller.name %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @reseller.company %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @reseller.email %>
+</p>
+
+<p>
+  <strong>Phone number:</strong>
+  <%= @reseller.phone_number %>
+</p>
+
+<p>
+  <strong>Number of apps:</strong>
+  <%= @reseller.number_of_apps %>
+</p>
+
+<p>
+  <strong>Type of business:</strong>
+  <%= @reseller.type_of_business %>
+</p>
+
+<p>
+  <strong>Client info:</strong>
+  <%= @reseller.client_info %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @reseller.location %>
+</p>
+
+<%= link_to 'Edit', edit_reseller_path(@reseller) %> |
+<%= link_to 'Back', resellers_path %>

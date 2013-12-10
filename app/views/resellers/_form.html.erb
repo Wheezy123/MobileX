@@ -1,0 +1,49 @@
+<%= form_for(@reseller) do |f| %>
+  <% if @reseller.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@reseller.errors.count, "error") %> prohibited this reseller from being saved:</h2>
+
+      <ul>
+      <% @reseller.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :company %><br>
+    <%= f.text_field :company %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :phone_number %><br>
+    <%= f.text_field :phone_number %>
+  </div>
+  <div class="field">
+    <%= f.label :number_of_apps %><br>
+    <%= f.number_field :number_of_apps %>
+  </div>
+  <div class="field">
+    <%= f.label :type_of_business %><br>
+    <%= f.text_field :type_of_business %>
+  </div>
+  <div class="field">
+    <%= f.label :client_info %><br>
+    <%= f.text_area :client_info %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br>
+    <%= f.text_field :location %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

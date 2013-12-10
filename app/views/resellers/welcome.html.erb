@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- <link rel="stylesheet" href="style.css">
+		<link href="type.css" rel="Stylesheet" type="text/css"/>
+		<link rel="stylesheet" type="text/css" href="font-awesome.css">
+
+		
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		
+		<script type="text/javascript" src="pages.js"></script> -->
+	
+		<title>Sign Up MXL Apps</title>
+	</head>
+
+
+<body id="site">
+ 
+ <!-- First Page --------------------------------------------------------- -->
+		<div class="one tomIsAwesomeOne" id="oneone">
+		 	<div class="first" id="first">
+		 		
+		 
+		 		<div class="contain_1">
+					<div class='logo'>
+		 				<%= image_tag("logo.png")%>
+		 			</div>
+				</div>
+		 	
+			 		
+				<div class="button">
+					<div class="blue-btn">
+					  <a class="first-link" href=""> Get Started </a>
+					  <a href="#" class="nextButtonOne" ><i class="fa_icon_down"></i></a>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+<!-- Second Page --------------------------------------------------------- -->
+	<div class="two tomIsAwesomeTwo" id="twotwo">
+		 <div class="second">
+			<div class="about">
+			      
+			      <h2>Why pick MXL Apps?</h2>
+
+			      <ul class="about-tiles x-cols-1-1-2-3" style="margin: auto;">
+			        <li class="security textblock-with-icon">
+			          <h4 class="fa_icon_push"> Push Notifications</h4>
+
+			          <p>Send content directly to your users.</p>
+			        </li>
+
+			        <li class="send-money textblock-with-icon">
+			          <h4 class="fa_icon_inapp">In-App Messages</h4>
+
+			          <p>Direct communication inside the applications.</p>
+			        </li>
+
+			        <li class="fast textblock-with-icon">
+			          <h4 class="fa_icon_social">Social Media</h4>
+
+			          <p>Extensive integration with multiple social media platforms.</p>
+			        </li>
+
+			        <li class="free-to-receive textblock-with-icon">
+			          <h4 class="fa_icon_mobile">Mobile Platforms</h4>
+
+			          <p>Push your app to the IOS and Android platforms.</p>
+			        </li>
+
+			        <li class="debit-card textblock-with-icon">
+			          <h4 class="fa_icon_media">Media</h4>
+
+			          <p>Add a variety of media tools to your applications.</p>
+			        </li>
+
+			        <li class="privacy textblock-with-icon">
+			          <h4 class="fa_icon_built">Built by MXL Labs</h4>
+
+			          <p>We take care of all the back-end developing.</p>
+			        </li>
+			      </ul>
+
+			    <div class="arrow" id="arrowtwo">
+			    
+		    		<a href="#" class="nextButtonTwo" ><%= image_tag("arrow.png")%></a>
+		    	</div>
+		    </div>
+		</div>
+	</div>
+
+
+<!-- Third page  ---------------------------------------------------------->
+	 <div class="three tomIsAwesomeThree" id="threethree">	
+	 	<div class="third">
+
+	 		<h2 id="titles">Tell us some basics</h2>
+	 		<form class="forms" >
+
+	 		<!-- Beginning of Rails form -->
+	 		<%= form_for(Reseller.new) do |f| %>
+		  <% if @reseller.errors.any? %>
+		    <div id="error_explanation">
+		      <h2><%= pluralize(@reseller.errors.count, "error") %> prohibited this reseller from being saved:</h2>
+
+		      <ul>
+		      <% @reseller.errors.full_messages.each do |msg| %>
+		        <li><%= msg %></li>
+		      <% end %>
+		      </ul>
+    </div>
+  <% end %>
+
+	 			<div>
+
+		 			<label>
+
+						<!-- <input id="name" type="text" name="Name" placeholder="Name" onfocus="this.value='';"/> -->
+						<%= f.text_field :name, :id => 'name', :placeholder => 'Name', :onfocus => "this.value='';" %>
+					</label>
+
+		 			<label>
+					<!-- 	<input id="company" type="text" name="company" placeholder="Company" onfocus="this.value='';"/> -->
+						<%= f.text_field :company, :id => 'company', :placeholder => 'Company', :onfocus => "this.value='';" %>
+					</label>
+
+		 			<label>
+		 			<!-- 	<input id="email"  type="email" name="email" placeholder="Email" onfocus="this.value='';"/> -->
+		 				<%= f.text_field :email, :id => 'email', :placeholder => 'Email', :onfocus => "this.value='';" %>
+	 				</label>
+
+		 			<label>
+					<!-- 	<input id="phone" type="text" name="phone" placeholder="Phone Number" onfocus="this.value='';"/> -->
+						<%= f.text_field :phone, :id => 'phone', :placeholder => 'Phone', :onfocus => "this.value='';" %>
+					</label>
+
+				</div>
+				<% end %>
+			</form>
+			
+			<div class="arrow">
+	    		<a href="#" class="nextButtonThree"><%= image_tag("arrow.png") %></a>
+	    	</div>
+				
+	 	</div>
+	 </div>
+
+
+<!-- Fourth Page -------------------------------------------------------- -->
+	<div class="four tomIsAwesomeFour" id="fourfour">
+		<div class="fourth">
+
+			<h2 id="titles">Some details</h2>
+			
+				<form class="forms">
+					<label>
+						<!-- <input id="number" type="text" name="type" placeholder="How many apps will you be building? i.e 1-5 / 5-10/ 10+" onfocus="this.value='';" /> -->
+						<%= f.number_field :number_of_apps, :id =>'number', :placeholder => 'How many apps will you be building?', :min => 0, :max => 50 %>
+					</label>
+					<label>
+						<input id="type" type="text" name="type" placeholder="Type of Business i.e Commercial / Tech / Personal" onfocus="this.value='';"/>
+
+					</label>
+
+					<label>
+						<input id="client"  type="text" name="client" placeholder="A little bit about your client base" onfocus="this.value='';" />
+					</label>
+					
+					<label>
+						<input id="location" type="text" name="location" placeholder="Where are you located?" onfocus="this.value='';"/>
+					</label>
+					
+				</form>
+
+				<div class="arrow">
+	    			<a href="#" class="nextButtonFour"><%= image_tag("arrow.png") %></a>
+	    		</div>
+			
+		</div>
+	</div>
+
+
+<!-- Fifth Page ------------------------------------------------------------>
+	<div class="five tomIsAwesomeFive" id="fivefive">
+		
+		<div class="about">
+		      
+		      <h2>What happens next?</h2>
+
+		      <ul class="about-tiles x-cols-1-1-2-3" style="margin: auto;">
+		        <li class="security textblock-with-icon">
+		          <h4 class="fa_icon_portfolio">Portfolio</h4>
+
+		          <p>With our “plug-and-play” tech- nology, MXL Labs makes it easy for you to create and maintain your portfolio.</p>
+		        </li>
+
+		        <li class="send-money textblock-with-icon">
+		          <h4 class="fa_icon_testimonials">Testimonials</h4>
+
+		          <p>Learn more about what our clients are saying and join in on the conversation</p>
+		        </li>
+
+		        <li class="fast textblock-with-icon">
+		          <h4 class="fa_icon_pricing">Pricing</h4>
+
+		          <p>We provide our clients with high-quality, low cost technology.</p>
+		        </li>
+
+		        <li class="free-to-receive textblock-with-icon">
+		          <h4 class="fa_icon_contact">Contact</h4>
+
+		          <p>Questions? Comments? Feel free to contact us anytime for support.</p>
+		        </li>
+
+		        <li class="debit-card textblock-with-icon">
+		          <h4 class="fa_icon_tech">Technology</h4>
+
+		          <p>Our leading-edge technology platform features a user-friendly interface and offers advanced capabilities for you and your clients</p>
+		        </li>
+
+		        <li class="privacy textblock-with-icon">
+		          <h4 class="fa_icon_analytics">Analytics</h4>
+
+		          <p>Our Analytics let you measure your advertising ROI as well as track your Flash, video, and social networking sites and applications.</p>
+		        </li>
+		      </ul>
+	    </div>
+	    <%= link_to "Back to Top", new_reseller_path(:anchor =>'#oneone') %>
+	</div>
+
+<!-- <script type="text/javascript" src="script.js"></script> -->
+<%= javascript_include_tag "script", "data-turbolinks-track" => true %>
+
+</body>
+</html>

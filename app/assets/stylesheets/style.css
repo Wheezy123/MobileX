@@ -1,0 +1,420 @@
+/* FONTS -------------------------------*/	 
+	@font-face {
+	    font-family: '_.regular';
+	    src: url('type/novecentosanswide-bold-webfont-webfont.eot');
+	    src: url('type/novecentosanswide-bold-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('type/novecentosanswide-bold-webfont-webfont.woff') format('woff'),
+	         url('type/novecentosanswide-bold-webfont-webfont.ttf') format('truetype'),
+	         url('type/novecentosanswide-bold-webfont-webfont.svg#_.regular') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+
+	}
+	@font-face {
+	    font-family: 'novecento_sans_widebook';
+	    src: url('type/novecentosanswide-book-webfont-webfont.eot');
+	    src: url('type/novecentosanswide-book-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('type/novecentosanswide-book-webfont-webfont.woff') format('woff'),
+	         url('type/novecentosanswide-book-webfont-webfont.ttf') format('truetype'),
+	         url('type/novecentosanswide-book-webfont-webfont.svg#novecento_sans_widebook') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+
+	}
+
+
+/*---------------------------------------*/
+ 
+ html, body {
+ 
+    z-index: 1;
+    height: 100vh;
+    -webkit-overflow-scrolling: touch;
+    hyphens: none;
+    padding:0;
+    margin:0;
+  }
+
+.one { background: #ffffff;
+  height: 100vh;
+}
+
+.two { 
+  background: #f28705;
+  height: 100vh;
+  display:block;
+}
+
+.three { 
+  background: #f2b705;
+  height: 100vh;
+  display:block;
+}
+
+.four { 
+  background: #6093bf;
+  height: 100vh;
+  display:block;
+}
+
+.five {
+  background: #005395;
+  height: 100vh;
+  display:block;
+}
+
+
+
+h2 {
+  font-size: 42px;
+  font-weight: 100;
+  margin-bottom: 50px;
+  text-align: center;
+  margin: 30px 0 60px;
+
+  color: white;
+}
+
+#titles {
+  padding-top: 100px;
+}
+
+---------------
+
+/*FIRST PAGE ------ */
+
+
+
+
+	.first {
+		
+		height: 40em;
+	}
+
+	.logo {
+		display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	    padding-top: 14.2em;
+	    max-width: 240px;
+
+	}
+
+
+	
+
+/*SIGN UP BUTTON ----------------------*/
+
+	.button{
+		margin-top: 4.4em;
+	}
+	.blue-btn a{
+	  color: white;
+	  text-decoration:none;
+	  text-align: center;
+	  display:block; /* important */
+
+	}
+
+	.blue-btn, .first-link{
+	  -webkit-transition: 0.4s;
+	  -moz-transition: 0.4s;
+	  -ms-transition: 0.4s;
+	  -o-transition: 0.4s;
+	  transition: 0.4s;     
+	}
+
+
+	.blue-btn{
+	  height: 100px;
+	  font: normal normal 700 1em/4em Arial,sans-serif;
+	  overflow: hidden;
+	  width: 300px;
+	  background-color: #6acbde;
+	  font-size: 30px;
+	  margin: 0 auto;
+
+	}
+
+	.blue-btn:hover{
+	   background-color: #6acbde;
+	}
+
+	.blue-btn a:hover{
+	  text-decoration: none;
+	}
+
+	.first-link{
+	  margin-top: 0em;   
+	}
+
+	.blue-btn:hover .first-link{
+	  margin-top: -4em;
+	}
+
+  .fa_icon_down:before {
+    content: "\f107";
+    font-size: 125px;
+    text-align: center;
+    }
+
+
+/*SECOND PAGE & FIFTH PAGE-------------------*/
+
+	/*Second and Fifth Page --------*/
+ 
+    [class*=fa_icon_]:before {
+    display: inline-block;
+    font-family: "FontAwesome";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ICONS -------------------------- */
+  /*Page 2 ------------------*/
+    .fa_icon_push:before {
+    content: "\f06a";
+    }
+    .fa_icon_inapp:before {
+      content: "\f0e0";
+    }
+    .fa_icon_social:before {
+    content: "\f082  \f099  \f08c";
+    }
+    .fa_icon_mobile:before {
+    content: "\f10a  \f10b";
+    }
+    .fa_icon_media:before {
+    content: "\f152  \f130  \f0c6";
+    }
+    .fa_icon_built:before {
+    content: "\f011";
+    }
+
+  /*Page 3 ------------------*/
+  	
+
+
+  /*Page 5 ------------------*/
+	.fa_icon_portfolio:before {
+    content: "\f06c";
+    }
+    .fa_icon_testimonials:before {
+      content: "\f086";
+    }
+    .fa_icon_pricing:before {
+    content: "\f09d";
+    }
+    .fa_icon_contact:before {
+    content: "\f098";
+    }
+    .fa_icon_tech:before {
+    content: "\f0ee";
+    }
+    .fa_icon_analytics:before {
+    content: "\f0ad";
+    }
+
+  /*------------------------------------*/
+
+
+  h2,h4 {
+    margin-top: 0;
+  }
+
+  body {
+    font-family: "Helvetica Neue", helvetica, sans-serif;
+    font-size: 20px;
+  }
+
+  *,
+  :before,
+  :after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  [class*=cols-] > * {
+    float: left;
+  }
+  .x-cols-1-1-1-3 > *.base-colspan-1 {
+    width: 100%;
+  }
+  .x-cols-1-1-2-3 > * {
+    width: 100%;
+  }
+  .x-cols-1-1-2-3 > *.base-colspan-1 {
+    width: 100%;
+  }
+
+  @media (min-width: 1024px) {
+    .x-cols-1-1-2-3 > * {
+      width: 33.3333333333%;
+    }
+    .x-cols-1-1-2-3 > *.large-colspan-1 {
+      width: 33.3333333333%;
+    }
+    .x-cols-1-1-2-3 > *.large-colspan-2 {
+      width: 66.6666666667%;
+    }
+    .x-cols-1-1-2-3 > *.large-colspan-3 {
+      width: 100%;
+    }
+    .x-cols-1-1-2-3 > *.large-skip-1 {
+      margin-left: 33.3333333333%;
+    }
+    .x-cols-1-1-2-3 > *.large-skip-2 {
+      margin-left: 66.6666666667%;
+    }
+  }
+
+  .textblock-with-icon h4[class*=fa_icon_]:before {
+    display: block;
+  }
+  .about {
+    color: white;
+    padding: 25px;
+    clear: both;
+
+  }
+  .about h2 {
+    font-size: 42px;
+    font-weight: 100;
+    margin-bottom: 50px;
+    text-align: center;
+    margin: 30px 0 60px;
+  
+  }
+  .about ul.about-tiles {
+    padding: 0;
+    list-style: none;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about ul.about-tiles li {
+    margin-left: -3px;
+    line-height: 1.4;
+    margin-bottom: 80px;
+    width: 400px;
+
+  }
+  .about ul.about-tiles h4 {
+    margin-bottom: 0;
+  }
+  .about ul.about-tiles h4:before {
+    font-size: 40px;
+  }
+  .about ul.about-tiles p {
+    margin: 0;
+  }
+  @media (min-width: 1024px) {
+    .about ul.about-tiles li:nth-child(odd) {
+      clear: none;
+    }
+    .about ul.about-tiles li:nth-child(3n+1) {
+      clear: left;
+    }
+    .about ul.about-tiles li:last-child,
+    .about ul.about-tiles li:nth-last-child(1),
+    .about ul.about-tiles li:nth-last-child(2),
+    .about ul.about-tiles li:nth-last-child(3) {
+      margin-bottom: 0;
+    }
+  }
+  @media (min-width: 1280px) {
+    .about ul.about-tiles {
+      margin-left: -120px;
+      max-width: 1280px;
+    }
+    .about ul.about-tiles li {
+      padding: 0 0 0 120px;
+    }
+    .about .content {
+      max-width: 1280px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+/* Arrow ------------------------------------*/
+
+	.arrow img{
+		max-width: 80px;
+		clear: both;
+		margin-left: 60px;
+		margin-top: 1.5em;
+    padding-top: 0.2em;
+    padding-bottom: 4.9em;
+	}
+
+	.arrow {
+	 	
+	 	margin: 0 auto;
+	 	max-width: 10em;
+    padding-top: 4em;
+	 	
+	 	
+	 }
+
+	 #arrowtwo img{
+	 	margin-top: 5em;
+	 }
+
+ 
+
+
+/* THIRD PAGE ------ */
+
+/*Forms ------------------------------------*/
+
+	.forms {
+	margin:0 auto;
+	position: relative;
+  padding-top: 2.125em;
+	width: 455px;
+	}
+	
+
+	/*Third page form --*/
+	#name, #company, #email, #phone {
+		font-size: 14px;
+		width: 450px;
+    color : #000000;
+		height:45px;
+		border:0;
+		padding:4px 8px;
+		margin-bottom:20px;
+		border-radius:3px;
+	}
+
+	/*Fourth page form --*/
+	#number, #type, #client, #location {
+		font-size: 14px;
+		width: 450px;
+		color : #d9d7d8;
+		height:45px;
+		border:0;
+		padding:4px 8px;
+		margin-bottom:20px;
+		border-radius:3px;
+	}
+
+
+form input[type='text']:focus{color:#000}
+
+
+
+/* FOURTH PAGE ----*/
+/* FIFTH PAGE ----*/
+------------------------------------*
+
+
+
+
+
